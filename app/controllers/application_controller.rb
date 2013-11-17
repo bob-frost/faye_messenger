@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
 
     def permission_denied
       respond_to do |format|
-        format.html { redirect_to current_user ? root_url : new_user_session_url, status: :unauthorized }
+        format.html { redirect_to current_user ? root_url : new_user_session_url }
         format.js   { head :unauthorized }
       end
     end
