@@ -8,14 +8,12 @@ gem 'devise'
 gem 'declarative_authorization'
 gem 'private_pub'
 
-group :assets, :development do
-  gem 'sass-rails', '~> 4.0.0'
-  gem 'uglifier', '>= 1.3.0'
-  gem 'coffee-rails', '~> 4.0.0'
-  gem 'jquery-rails'
-  gem 'bootstrap-sass'
-  gem 'rails-backbone'
-end
+gem 'sass-rails', '~> 4.0.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'bootstrap-sass'
+gem 'rails-backbone'
 
 group :production do
   gem 'rails_12factor'
