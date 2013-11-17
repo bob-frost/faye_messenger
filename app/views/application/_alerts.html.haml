@@ -1,0 +1,6 @@
+#alerts
+  - [:notice, :alert].each do |key|
+    - if flash[key]
+      .alert.alert-dismissable{class: "alert-#{key}"}
+        = flash[key]
+        %button.close{data: {dismiss: 'alert', aria: {hidden: 'true'}}} &times;

@@ -1,0 +1,40 @@
+#wrapper{
+  min-width: 320px;
+  margin: 10px auto;
+}
+#header{
+  padding-bottom: 10px; 
+  margin-bottom: 10px;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.alert-notice {
+  @include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
+}
+.alert-alert {
+  @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+}
+
+#dialog{
+  form{
+    margin-top: 30px;
+  }
+}
+
+.message{
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid $gray-lighter;
+  border-radius: 5px;
+  &.out{
+    margin-left: 30px;
+  }
+  &.in{
+    background: $gray-lighter;
+  }
+  .head{
+    font-size: $font-size-small;
+    color: $gray;
+  }
+}

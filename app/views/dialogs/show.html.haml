@@ -1,0 +1,9 @@
+%h1= @user.username
+
+#dialog
+  :javascript
+    $(document).ready(function(){
+      Messenger.dialogView = new Messenger.Views.Dialog(#{@user.id}, #{@messages.to_json});
+    });
+
+= subscribe_to "/dialogs/#{current_user.id}/#{@user.id}"

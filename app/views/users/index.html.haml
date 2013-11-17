@@ -1,0 +1,7 @@
+%h1= t :users
+
+.row
+  .col-xs-12.col-sm-6.col-md-4
+    .list-group
+      - @users.each do |user|
+        = link_to user.username, dialog_path(user), class: 'list-group-item'

@@ -1,0 +1,2 @@
+:javascript
+  var current_user = #{current_user ? current_user.attributes.slice('id', 'username').to_json : 'null'};

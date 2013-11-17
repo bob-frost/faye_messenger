@@ -1,0 +1,13 @@
+en:
+  save: Save
+  send: Send
+  sending: Sending...
+
+  sign_in: Sign in
+  sign_out: Sign out
+  sign_up: Sign up
+  users: Users
+
+  dialogs: Dialogs
+  message_read_at: Read at %{time}
+  message_not_read: Not read yet

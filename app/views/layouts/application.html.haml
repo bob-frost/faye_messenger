@@ -1,0 +1,9 @@
+!!! 5
+%html
+%head= render 'head'
+%body
+  #wrapper.container
+    = render 'header'
+    #main
+      = render 'alerts'
+      = yield

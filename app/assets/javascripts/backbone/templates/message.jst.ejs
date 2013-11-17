@@ -1,0 +1,10 @@
+<div class="message <%= sender_id == Messenger.currentUser.id ? 'out' : 'in' %>">
+  <div class="head">
+    <span class="date"><%= moment(created_at).format('DD MMMM YYYY, HH:mm') %></span>
+    <% if(!read && sender_id == Messenger.currentUser.id){ %>
+      &#183;
+      <span class="status">not read yet</span>
+    <% } %>
+  </div>
+  <div class="text"><%= text %></div>
+</div>
