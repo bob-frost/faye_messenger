@@ -12,8 +12,8 @@ Messenger::Application.routes.draw do
     end
   end
   
-  devise_for :users, :controllers => { :sessions => 'sessions',
-                                       :registrations => 'registrations' }
+  devise_for :users, controllers: { sessions: 'sessions',
+                                    registrations: 'registrations' }
 
   resources :users, only: [:index]
 end

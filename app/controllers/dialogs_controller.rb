@@ -1,6 +1,6 @@
 class DialogsController < ApplicationController
   filter_access_to :all
-  before_filter :load_user, :only => [:show, :read]
+  before_filter :load_user, only: [:show, :read]
 
   def index
     @users = current_user.collocutors.order :username
