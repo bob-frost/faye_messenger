@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20131117102028) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "messages", force: true do |t|
     t.integer  "sender_id",                    null: false
     t.integer  "recipient_id",                 null: false
@@ -30,6 +33,6 @@ ActiveRecord::Schema.define(version: 20131117102028) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["username"], name: "index_users_on_username", unique: true
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.1'
-gem 'sqlite3'
+gem 'pg'
 gem 'haml'
 gem 'haml-rails'
 gem 'devise'
