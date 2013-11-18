@@ -1,0 +1,3 @@
+Simple {live chat application}[http://faye-messenger.herokuapp.com/] using Faye.
+
+Separate faye server to deploy to Heroku: https://github.com/bob-frost/heroku_faye_server.
